@@ -8,11 +8,14 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code (fixed path)
+# Copy the rest of the application code
 COPY . .
+
+# Run `black` to auto-format before starting backend server
+RUN black . 
 
 # Expose API port
 EXPOSE 8000
 
-# Run the FastAPI server
+# Run the backend server
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
