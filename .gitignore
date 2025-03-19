@@ -1,0 +1,94 @@
+# Global ignores
+.DS_Store
+Thumbs.db
+
+# Ignore all .env files (including subdirectories)
+**/.env
+**/.env.*
+**/env
+
+# Byte-compiled / optimized / compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Package files
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# IDE/editor metadata
+.vscode/
+.idea/
+*.swp
+
+# Logs & database files
+logs/
+*.log
+*.sqlite3
+*.db
+
+# Pytest & coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+.cache/
+nosetests.xml
+coverage.xml
+*.mo
+*.pot
+
+# Black & MyPy caches
+.mypy_cache/
+.black/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ===============================
+# Next.js (Frontend) ignores
+# ===============================
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pnpm-lock.yaml
+
+# Build output
+.next/
+out/
+.cache/
+*.next
+*.lock
+
+# Next.js static files
+public/static/
+public/images/
+static/
+
+# Generated files
+coverage/
+*.tsbuildinfo
+
+# IDE/editor metadata
+.vscode/
+.idea/
+
+# Misc
+*.swp
+*.swo**/.env
+**/.env.*
+venv/
+node_modules/
+dist/
+.next/
